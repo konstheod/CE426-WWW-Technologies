@@ -1,7 +1,7 @@
 <html>
 <title>Beer Selection></title>
 <body>
-  <h1 align="center">Beer Selection</h1>
+  <h1 align="center">Beer Selection </h1>
   <form method="POST" action="BeerSelect.do">
     Select Beer Characteristics
     <h4  align="left">Color: 
@@ -14,7 +14,17 @@
         </h4>
     <br><br>
     <center>
-      <input type="Submit">
+      <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Submit</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
     </center>
    </form>
 </body>
