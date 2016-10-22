@@ -16,7 +16,7 @@ public class BeerSelect extends HttpServlet {
     String uname = request.getParameter("uname");
     String psw = request.getParameter("psw");
     
-    System.out.println("Password " + psw);
+    //System.out.println("Password " + psw);
     // Now use our Coffee Model above 
     
     Uthldap ldap = new Uthldap(uname,psw);
