@@ -1,0 +1,3 @@
+I must move my .war file to the folder /var/lib/tomcat7/webapps to work properly so the command: sudo cp file /var/lib/tomcat7/webapps
+then you must restart the tomcat with the command: sudo service tomcat7 stop
+
