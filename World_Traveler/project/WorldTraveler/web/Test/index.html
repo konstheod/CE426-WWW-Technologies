@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="MainCSS/indexTest.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Main Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="stylesheet" href="../MainCSS/indexTest.css" type="text/css"/>
+
+        <script type="text/javascript" src="https://conversational-form-0iznjsw.stackpathdns.com/conversational-form.min.js" crossorigin></script>
+        
+    </head>
+    <body>
+         
+        <ul class="topnav" id="myTopnav">
+            <li><a href="#Sign-Out">Sign Out</a></li>
+            <li><a href="#Edit-Profile">Edit Profile</a></li>
+            <li><a href="#History">History</a></li>
+            <li><a href="#Home">Home</a></li>
+
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
+        </ul>
+        
+        <div cf-context class="boxed">
+            <form cf-form action="Next.jsp" method="POST" >
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input cf-questions="Hi there! What's your name?" type="name" class="form-control" name="name" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="origin">Origin</label>
+                    <div class="radio">
+                        <label>
+                            <input cf-questions="Great to meet you, {previous-answer}! I'm a web form, what do you do?|Awesome, {previous-answer}! And from which town are you want to travel?" type="radio" name="origin" id="origin-1" value="Volos">
+                            Volos
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="origin" id="origin-2" value="Athens">
+                            Athens
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="origin" id="origin-3" value="Thessaloniki">
+                            Thessaloniki
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="origin" id="origin-2" value="Alexandreia">
+                            Alexandreia
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <div class="radio">
+                        <label>
+                            <input cf-questions="Where do you want to travel?" type="radio" name="destination" id="destination-1" value="Alexandreia">
+                            Alexandreia
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="destination" id="destination-2" value="Thessaloniki">
+                            Thessaloniki
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="destination" id="destination-3" value="Athens">
+                            Athens
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="destination" id="destination-2" value="Volos">
+                            Volos
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+              
+        </div>
+        
+        
+        
+        
+        
+    
+    
+     
+
+    </body>
+</html>
+
